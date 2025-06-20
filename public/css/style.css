@@ -1,0 +1,107 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  margin: 0;
+  padding: 0;
+  color: #222;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.navbar {
+  background: linear-gradient(to right, #1f4037, #99f2c8) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand,
+.nav-link,
+.dropdown-toggle {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #ffeb3b !important;
+}
+
+.container {
+  animation: slideUp 0.6s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+input, textarea, select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.alert-danger {
+  background: #e74c3c;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px;
+  animation: popFade 0.4s ease-in-out;
+}
+
+@keyframes popFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+img {
+  border-radius: 10px;
+}
